@@ -1,41 +1,50 @@
 *{
     margin: 0;
     padding: 0;
-    height: 100vh;
+    
 }
 body{
     background-color: rgb(30,30,40);
+    flex-direction: column;
+    height: 100vh;
 }
 /* .......................................Encabezado......................................... */ 
 .encabezado{
-    height: 25%;
+    height: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgb(20,20,30);
-    /* padding: 2% ; */
-
+    padding: 2% ;
 }
 .botones{
+    display: flex;
+    flex-direction: row;
+    height: ;
     
-    
-    
+
 }
 .titulo{
     color: white;
+    
+
 }
 /* ........................................Principal........................................... */
 .texto-y-meme{
-    /* display: flex;
-    justify-content: center; */
-    background-color: black;
-    width: 30%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     
 }
-/* .caja-meme{
+.caja-meme{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 30%;
+    align-items: center;
+    height: 25%;
+    width: 25%;
     background-color: white;
-    margin-top: 10%;    
-} */
+    
+}
