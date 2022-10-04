@@ -8,6 +8,9 @@ body{
     flex-direction: row;
     height: 100vh;
 }
+.lightmode{
+    background-color: rgb(200, 200,180);
+}
 /* .......................................Encabezado......................................... */ 
 .encabezado{
     height: 12%;
@@ -65,7 +68,8 @@ body{
     align-items: center;
     width: 13%;
     height: 100%;
-    background-color: white;
+    background-color: rgb(40, 40, 50);
+    color: white;
 }
 /* ........................................Sidebar-Image........................................... */
 .sidebar-image{
