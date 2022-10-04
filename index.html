@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- .................................................Barra dArriba.................................................-->
 <div class="main-content">
   <header class="encabezado">
       <div class="titulo">
@@ -21,13 +22,14 @@
          </form>
         </div>   
     </header>
+    <!-- .................................................Contenido.................................................-->
     <main class="texto-y-meme">
         <div class="caja-meme">
           <div class="caja-arriba">
-                <h1>mira leila</h1>
+                <h1>NO MIRES LEILA</h1>
           </div>
           <div class="caja-abajo">
-                <h1>XD</h1>
+                <h1>NO! D:</h1>
           </div>  
         </div>
         <div class="download-meme">
@@ -35,6 +37,7 @@
         </div>
     </main>
   </div>
+   <!-- .................................................Barra imagen.................................................-->
     <section class="sidebars">
       <div class="sidebar-image">
         <h1 class="sidebar-tittle">Imagen</h1>
@@ -79,11 +82,75 @@
                 </div>
                 <button class="reset-filters">Restablecer Filtros</button>
       </div>
-      <div class="sidebar-text">
-        <div class="sidebar-">
+      <!-- .................................................Barra itexto.................................................-->
+        <div class="sidebar-text">
+          <h1 class="sidebar-tittle">Texto</h1>
+          <label for="Texto-Superior">Superior</label>
+           <textarea name="" id="Texto-Superior" cols="15" rows="1"></textarea>
+           <div class="checkbox-text">
+            <input type="checkbox">
+            <p>sin texto Superior</p>
+           </div>
+           <label for="Texto-inferior">inferior</label>
+           <textarea name="" id="Texto-Superior" cols="15" rows="1"></textarea>
+           <div class="checkbox-text">
+            <input type="checkbox">
+            <p>sin texto inferiror</p>
+            
+          </div>
+          <h4>FUENTE</h4>
+            <form action="">
+              <select name="font-options" id="font-options">
+                <option value="Arial">Arial</option>
+                <option value="ABlack">Arial Black</option>
+                <option value="ATyesriter">American Typewriter</option>
+                <option value="Amono">Andale Mono</option>
+                <option value="ComicSans">Comic Sans Ms</option>
+                <option value="Helvetica">Helvetica</option>
+                <option value="Impact">Impact</option>
+                <option value="Verdana">Verdana</option>
+                <option value="TNR">Times New Roman</option>
+              </select>
+            </form>
+            <div class="font-buttons">
+              <input type="number" class="number-button">
+              <button>a</button>
+              <button>a</button>
+              <button>a</button>
+            </div>  
+            <div class="color-background">
+              <div class="text-color">
+                <label for="color-pick-texto">color</label>
+                <input type="color">
+              </div>
+              <div class="text-background">
+                <label for="color-pick-background">fondo</label>
+                <input type="color">
+              </div>
+              </div>
+             <div class="fondo-transparente">
+                <button class="boton-transparente">f</button>
+                <p>Fondo transparente</p>
+              </div> 
+              <div class="contorno-colores">
+                <h4>CONTORNO</h4>
+                <button>Ninguno</button>
+                <button>Claro</button>
+                <button>Oscuro</button>
+              </div>
+              <label for="space">ESPACIO</label>
+              <input id="space" type="number">
+              <h4>INTERLINEADO</h4>
+              <form action="">
+                <select name="image-options" id="image-options">
+                  <option value="zero">0.8</option>
+                  <option value="one">1</option>
+                  <option value="one-two">1.2</option>
+                  <option value="one-five">1.5</option>
+                  <option value="two">2</option>
+                  <option value="two-five">2.5</option>
+                </select>
 
-        </div>
-      </div>
     </section>
     <script src="main.js"></script>
 </body>

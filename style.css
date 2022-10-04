@@ -88,3 +88,31 @@ body{
     flex-direction: column;
 }
 /* ........................................Sidebar-Text........................................... */
+.sidebar-text{
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
+}
+.checkbox-text{
+    display: flex;
+    flex-direction: row;
+}
+.number-button{
+    width: 50%;
+}
+.color-background{
+    display: flex;
+    flex-direction: row;
+}
+.text-color{
+    display: flex;
+    flex-direction: column;
+}
+.text-background{
+    display: flex;
+    flex-direction: column;
+}
+.fondo-transparente{
+    display: flex;
+    flex-direction: row;
+}
