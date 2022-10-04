@@ -31,6 +31,7 @@ body{
 }
 .texto-y-meme{ 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 88%; 
@@ -57,11 +58,33 @@ body{
     height: 15%;
     background-color: white;
 }
-/* ........................................Sidebar........................................... */
-.sidebar{
+/* ........................................Sidebar-General........................................... */
+.sidebars{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 13%;
     height: 100%;
     background-color: white;
 }
+/* ........................................Sidebar-Image........................................... */
+.sidebar-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    display: none;
+}
+.sidebar-url{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-color{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar-filters{
+    display: flex;
+    flex-direction: column;
+}
+/* ........................................Sidebar-Text........................................... */

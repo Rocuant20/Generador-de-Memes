@@ -16,13 +16,12 @@
         <div class="botones">
            <form action="">
             <button class="texto">Texto</button>
-            <button class="modooscuro">Modo Oscuro</button>
-            <button class="imagen">Imagen</button> 
+            <button class="imagen">Imagen</button>
+            <button class="modo-oscuro">Modo Oscuro</button> 
          </form>
         </div>   
     </header>
     <main class="texto-y-meme">
-    
         <div class="caja-meme">
           <div class="caja-arriba">
                 <h1>mira leila</h1>
@@ -31,11 +30,61 @@
                 <h1>XD</h1>
           </div>  
         </div>
+        <div class="download-meme">
+          <button class="button-download-meme" >Descargar Meme</button>
+        </div>
     </main>
   </div>
-    <section class="sidebar">
-  
-</section>
+    <section class="sidebars">
+      <div class="sidebar-image">
+        <h1 class="sidebar-tittle">Imagen</h1>
+          <div class="sidebar-url">
+            <label for="url-text">URL</label>
+            <input id="url-text" type="text">
+          </div>
+            <h5>FONDO</h5>
+              <div class="sidebar-color">
+                <input id="" type="color">  
+                <form action="">
+                  <select name="image-options" id="image-options">
+                    <option value="ninguno">Ninguno</option>
+                    <option value="aclarar">Aclarar</option>
+                    <option value="oscurecer">Oscurecer</option>
+                    <option value="diferencia">Diferencia</option>
+                    <option value="luminosidad">Luminosidad</option>
+                    <option value="multiplicar">Multiplicar</option>
+                  </select>
+                </form>
+              </div>
+              <h5>FILTROS</h5>
+                <div class="sidebar-filters">
+                  <label for="sidebar-brightness">BRILLO</label>
+                  <input id="sidebar-brightness" type="range">
+                  <label for="sidebar-opacity">OPACIDAD</label>
+                  <input id="sidebar-opacity" type="range">
+                  <label for="sidebar-contrast">CONTRASTE</label>
+                  <input id="sidebar-contrast" type="range">
+                  <label for="sidebar-blur">DEFENFOQUE</label>
+                  <input id="sidebar-blur" type="range">
+                  <label for="">ESCALA DE GRISES</label>
+                  <input id="sidebar-grayscale" type="range">
+                  <label for="sidebar-sepia">SEPIA</label>
+                  <input id="sidebar-sepia" type="range">
+                  <label for="">HUE</label>
+                  <input id="sidebar-hue" type="range">
+                  <label for="sidebar-saturate">SATURADO</label>
+                  <input id="sidebar-saturate" type="range">
+                  <label for="sidebar-negative">NEGATIVO</label>
+                  <input id="sidebar-negative" type="range">
+                </div>
+                <button class="reset-filters">Restablecer Filtros</button>
+      </div>
+      <div class="sidebar-text">
+        <div class="sidebar-">
+
+        </div>
+      </div>
+    </section>
     <script src="main.js"></script>
 </body>
 </html>
