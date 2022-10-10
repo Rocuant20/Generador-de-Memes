@@ -12,7 +12,7 @@ buttonImage.addEventListener(`click`,(e) =>{
 })
 buttonText.addEventListener(`click`,(e)=>{
     e.preventDefault()
-    sectionText.style.display = `block`
+    sectionText.style.display = `flex`
     sectionImage.style.display = `none`
 })
 buttonDarkMode.addEventListener(`click`,(e)=>{
