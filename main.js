@@ -4,11 +4,12 @@ const buttonDarkMode = document.getElementById(`button-darkMode`);
 const sectionSidebars = document.getElementById(`section-sidebars`);
 const sectionImage = document.getElementById(`sidebar-image`);
 const sectionText = document.getElementById(`sidebar-text`);
+const headerTittle = document.getElementById(`encabezado`)
 
 buttonImage.addEventListener(`click`,(e) =>{
     e.preventDefault()
     sectionText.style.display = `none`
-    sectionImage.style.display = `block`
+    sectionImage.style.display = `flex`
 })
 buttonText.addEventListener(`click`,(e)=>{
     e.preventDefault()
@@ -19,4 +20,5 @@ buttonDarkMode.addEventListener(`click`,(e)=>{
     e.preventDefault()
     document.body.classList.toggle(`lightmode`)
 })
+
 

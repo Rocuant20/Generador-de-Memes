@@ -1,156 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Generador de Memes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- .................................................Barra dArriba.................................................-->
-<div class="main-content">
-  <header class="encabezado">
-      <div class="titulo">
-        <h1>Generador de Memes</h1>
-      </div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  </head>
+  <body>
+    <!-- .................................................Barra dArriba.................................................-->
+    <div class="main-content">
+      <header id="encabezado" class="encabezado">
+        <div class="titulo">
+          <h1>Generador de Memes</h1>
+        </div>
         <div class="botones">
-           <form action="">
-            <button id="button-text" class="texto">Texto</button>
-            <button id="button-image" class="imagen">Imagen</button>
-            <button id="button-darkMode" class="modo-oscuro">Modo Oscuro</button> 
-         </form>
-        </div>   
-    </header>
-    <!-- .................................................Contenido.................................................-->
-    <main class="texto-y-meme">
+          <form action="">
+            <button id="button-text" class="boton-texto"><i class="devicon-travis-plain"></i>Texto</button>
+            <button id="button-image" class="boton-imagen"><i class="devicon-xd-plain"></i>Imagen</button>
+            <button id="button-darkMode" class="boton-modo-oscuro"><i class="devicon-labview-plain"></i>Modo Oscuro</button>
+          </form>
+        </div>
+      </header>
+      <!-- .................................................Contenido.................................................-->
+      <main class="texto-y-meme">
         <div class="caja-meme">
           <div class="caja-arriba">
-                <h1>NO MIRES LEILA</h1>
+            <h1>NO MIRES LEILA</h1>
           </div>
           <div class="caja-abajo">
-                <h1>NO! D:</h1>
-          </div>  
+            <h1>NO! D:</h1>
+          </div>
         </div>
         <div class="download-meme">
-          <button class="button-download-meme" >Descargar Meme</button>
+          <button class="button-download-meme"><i class="devicon-firebase-plain"></i>Descargar Meme</button>
         </div>
-    </main>
-  </div>
-   <!-- .................................................Barra imagen.................................................-->
+      </main>
+    </div>
+    <!-- .................................................Barra imagen.................................................-->
     <section id="section-sidebars" class="sidebars">
       <div id="sidebar-image" class="sidebar-image">
         <h1 class="sidebar-tittle">Imagen</h1>
-          <div class="sidebar-url">
-            <label for="url-text">URL</label>
-            <input id="url-text" type="text">
-          </div>
-            <h5>FONDO</h5>
-              <div class="sidebar-color">
-                <input id="" type="color">  
-                <form action="">
-                  <select name="image-options" id="image-options">
-                    <option value="ninguno">Ninguno</option>
-                    <option value="aclarar">Aclarar</option>
-                    <option value="oscurecer">Oscurecer</option>
-                    <option value="diferencia">Diferencia</option>
-                    <option value="luminosidad">Luminosidad</option>
-                    <option value="multiplicar">Multiplicar</option>
-                  </select>
-                </form>
-              </div>
-              <h5>FILTROS</h5>
-                <div class="sidebar-filters">
-                  <label for="sidebar-brightness">BRILLO</label>
-                  <input id="sidebar-brightness" type="range">
-                  <label for="sidebar-opacity">OPACIDAD</label>
-                  <input id="sidebar-opacity" type="range">
-                  <label for="sidebar-contrast">CONTRASTE</label>
-                  <input id="sidebar-contrast" type="range">
-                  <label for="sidebar-blur">DEFENFOQUE</label>
-                  <input id="sidebar-blur" type="range">
-                  <label for="">ESCALA DE GRISES</label>
-                  <input id="sidebar-grayscale" type="range">
-                  <label for="sidebar-sepia">SEPIA</label>
-                  <input id="sidebar-sepia" type="range">
-                  <label for="">HUE</label>
-                  <input id="sidebar-hue" type="range">
-                  <label for="sidebar-saturate">SATURADO</label>
-                  <input id="sidebar-saturate" type="range">
-                  <label for="sidebar-negative">NEGATIVO</label>
-                  <input id="sidebar-negative" type="range">
-                </div>
-                <button class="reset-filters">Restablecer Filtros</button>
+        <div class="sidebar-url">
+          <label for="url-text">URL</label>
+          <input class="gris" id="url-text" type="text" />
+        </div>
+        <h5>FONDO</h5>
+        <div class="sidebar-color">
+          <input id="" type="color" />
+          <form action="">
+            <select class="gris" name="image-options" id="image-options">
+              <option value="ninguno">Ninguno</option>
+              <option value="aclarar">Aclarar</option>
+              <option value="oscurecer">Oscurecer</option>
+              <option value="diferencia">Diferencia</option>
+              <option value="luminosidad">Luminosidad</option>
+              <option value="multiplicar">Multiplicar</option>
+            </select>
+          </form>
+        </div>
+        <h5>FILTROS</h5>
+        <div class="sidebar-filters">
+          <label for="sidebar-brightness">BRILLO</label>
+          <input class="blanco" id="sidebar-brightness" type="range" />
+          <label for="sidebar-opacity">OPACIDAD</label>
+          <input class="blanco" id="sidebar-opacity" type="range" />
+          <label for="sidebar-contrast">CONTRASTE</label>
+          <input class="blanco" id="sidebar-contrast" type="range" />
+          <label for="sidebar-blur">DEFENFOQUE</label>
+          <input class="blanco" id="sidebar-blur" type="range" />
+          <label for="">ESCALA DE GRISES</label>
+          <input class="blanco" id="sidebar-grayscale" type="range" />
+          <label for="sidebar-sepia">SEPIA</label>
+          <input class="blanco" id="sidebar-sepia" type="range" />
+          <label for="">HUE</label>
+          <input class="blanco" id="sidebar-hue" type="range" />
+          <label for="sidebar-saturate">SATURADO</label>
+          <input class="blanco" id="sidebar-saturate" type="range" />
+          <label for="sidebar-negative">NEGATIVO</label>
+          <input class="blanco" id="sidebar-negative" type="range" />
+        </div>
+        <button class="reset-filters">Reestablecer Filtros</button>
       </div>
       <!-- .................................................Barra itexto.................................................-->
-        <div id="sidebar-text" class="sidebar-text">
-          <h1 class="sidebar-tittle">Texto</h1>
-          <label for="Texto-Superior">Superior</label>
-           <textarea name="" id="Texto-Superior" cols="5" rows="1"></textarea>
-           <div class="checkbox-text">
-            <input type="checkbox">
-            <p>sin texto Superior</p>
-           </div>
-           <label for="Texto-inferior">inferior</label>
-           <textarea name="" id="Texto-inferior" cols="5" rows="1"></textarea>
-           <div class="checkbox-text">
-            <input type="checkbox">
-            <p>sin texto inferiror</p>
+      <div id="sidebar-text" class="sidebar-text">
+        <h1 class="sidebar-tittle">Texto</h1>
+        <label for="Texto-Superior">Superior</label>
+        <textarea class="probando" name="" id="Texto-Superior" cols="5" rows="1"></textarea>
+        <div class="checkbox-text">
+          <input type="checkbox" />
+          <p>sin texto Superior</p>
+        </div>
+        <label for="Texto-inferior">inferior</label>
+        <textarea class="probando" name="" id="Texto-inferior" cols="5" rows="1"></textarea>
+        <div class="checkbox-text">
+          <input type="checkbox" />
+          <p>sin texto inferiror</p>
+        </div>
+        <h4>FUENTE</h4>
+        <form action="">
+          <select name="font-options" id="font-options">
+            <option value="Arial">Arial</option>
+            <option value="ABlack">Arial Black</option>
+            <option value="ATyesriter">American Typewriter</option>
+            <option value="Amono">Andale Mono</option>
+            <option value="ComicSans">Comic Sans Ms</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Impact">Impact</option>
+            <option value="Verdana">Verdana</option>
+            <option value="TNR">Times New Roman</option>
+          </select>
+        </form>
+        <div class="font-buttons">
+          <input type="number" class="number-button" />
+          <button>a</button>
+          <button>a</button>
+          <button>a</button>
+        </div>
+        <div class="color-background">
+          <div class="text-color">
+            <label for="color-pick-texto">color</label>
+            <input type="color" />
           </div>
-          <h4>FUENTE</h4>
-            <form action="">
-              <select name="font-options" id="font-options">
-                <option value="Arial">Arial</option>
-                <option value="ABlack">Arial Black</option>
-                <option value="ATyesriter">American Typewriter</option>
-                <option value="Amono">Andale Mono</option>
-                <option value="ComicSans">Comic Sans Ms</option>
-                <option value="Helvetica">Helvetica</option>
-                <option value="Impact">Impact</option>
-                <option value="Verdana">Verdana</option>
-                <option value="TNR">Times New Roman</option>
-              </select>
-            </form>
-            <div class="font-buttons">
-              <input type="number" class="number-button">
-              <button>a</button>
-              <button>a</button>
-              <button>a</button>
-            </div>  
-            <div class="color-background">
-              <div class="text-color">
-                <label for="color-pick-texto">color</label>
-                <input type="color">
-              </div>
-              <div class="text-background">
-                <label for="color-pick-background">fondo</label>
-                <input type="color">
-              </div>
-              </div>
-             <div class="fondo-transparente">
-                <input type="checkbox">
-                <p>Fondo transparente</p>
-              </div> 
-              <div class="contorno-colores">
-                <h4>CONTORNO</h4>
-                <button>Ninguno</button>
-                <button>Claro</button>
-                <button>Oscuro</button>
-              </div>
-              <label for="space">ESPACIO</label>
-              <input id="space" type="number">
-              <h4>INTERLINEADO</h4>
-              <form action="">
-                <select name="image-options" id="image-options">
-                  <option value="zero">0.8</option>
-                  <option value="one">1</option>
-                  <option value="one-two">1.2</option>
-                  <option value="one-five">1.5</option>
-                  <option value="two">2</option>
-                  <option value="two-five">2.5</option>
-                </select>
-
+          <div class="text-background">
+            <label for="color-pick-background">fondo</label>
+            <input type="color" />
+          </div>
+        </div>
+        <div class="fondo-transparente">
+          <input type="checkbox" />
+          <p>Fondo transparente</p>
+        </div>
+        <div class="contorno-colores">
+          <h4>CONTORNO</h4>
+          <button>Ninguno</button>
+          <button>Claro</button>
+          <button>Oscuro</button>
+        </div>
+        <label for="space">ESPACIO</label>
+        <input class="probando" id="space" type="number" />
+        <h4>INTERLINEADO</h4>
+        <form action="">
+          <select name="image-options" id="image-options">
+            <option value="zero">0.8</option>
+            <option value="one">1</option>
+            <option value="one-two">1.2</option>
+            <option value="one-five">1.5</option>
+            <option value="two">2</option>
+            <option value="two-five">2.5</option>
+          </select>
+        </form>
+      </div>
     </section>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
