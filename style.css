@@ -5,13 +5,10 @@
 body{
     display: flex;
     background-color: rgb(30,30,40);
+    color: wheat;
     flex-direction: row;
     height: 100vh;
     font-family: 'Silkscreen', cursive;
-}
-.lightmode{
-    background-color: rgb(233, 233, 229);
-
 }
 /* .......................................Encabezado......................................... */ 
 .encabezado{
@@ -27,52 +24,23 @@ body{
     display: flex;
     flex-direction: row;
 }
-.boton-texto:focus{
+.boton-texto:focus,.boton-imagen:focus{
     background-color: rgb(50, 50,60);
 }
-.boton-texto:hover{
-    background-color: rgb(50, 50,60);
-    transition: background 0.2s 0s ease;
-}
-.boton-imagen:focus{
-    background-color: rgb(50, 50,60); 
-}
-.boton-imagen:hover{
+.boton-texto:hover,.boton-imagen:hover,.boton-modo-oscuro:hover{
     background-color: rgb(50, 50,60);
     transition: background 0.2s 0s ease;
 }
-.boton-modo-oscuro:hover{
-    background-color: rgb(50, 50,60);
-    transition: background 0.2s 0s ease;
-}
-.boton-texto{
+.boton-texto,.boton-imagen,.boton-modo-oscuro{
     font-size: 20px;
     background-color: rgba(255, 0, 0, 0);
-    color: white;
     border-color: rgba(255, 0, 0, 0);
     padding: 7px;
-}
-.boton-imagen{
-    font-size: 20px;
-    background-color: rgba(255, 0, 0, 0);
-    color: white;
-    border-color: rgba(255, 0, 0, 0);
-    padding: 7px;
-}
-.boton-modo-oscuro{
-    font-size: 20px;
-    background-color: rgba(255, 0, 0, 0);
-    color: white;
-    border-color: rgba(255, 0, 0, 0);
-    padding: 7px;
-}
-.titulo{
-    color: white;
 }
 /* ........................................Principal........................................... */
 .main-content{
     height: 100vh;
-    width: 87%;
+    width: 80%;
 }
 .texto-y-meme{ 
     display: flex;
@@ -86,17 +54,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
     height: 75%;
-    width: 33%;
+    width: 550px;
     background-color: black;
 }
-.caja-arriba{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15%;
-    background-color: white;
-}
-.caja-abajo{
+.caja-arriba,.caja-abajo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,35 +82,29 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 13%;
+    width: 20%;
     height: 100%;
     background-color: rgb(40, 40, 50);
-    color: white;
+
 }
 /* ........................................Sidebar-Image........................................... */
-.sidebar-image{
+.sidebar-image,.sidebar-url,.sidebar-filters{
     display: flex;
     flex-direction: column;
 }
-.sidebar-url{
-    display: flex;
-    flex-direction: column;
-}
+
 .sidebar-color{
     display: flex;
     flex-direction: row;
 }
-.blanco{
+.rango{
     appearance: none;
     height: 10px;
     border-radius: 15px;
     margin: 2%;
     background-color: #4b4b4b;
 }
-.sidebar-filters{
-    display: flex;
-    flex-direction: column;
-}
+
 .reset-filters:hover{
     background-color: rgb(80,80,100);
     transition: background 0.2s 0s ease;
@@ -160,13 +115,23 @@ body{
     background-color: rgb(60,60,80);
     border-style: none;
     border-radius: 13px;
-    color: white;
 }
-.gris{
+.fondo-oscuro{
     background-color: rgb(50,50,60);
     color: white;
 }
+.fondo-oscuro:focus-visible {
+    outline:none;
+}
 /* ........................................Sidebar-Text........................................... */
+.fondo-oscuro-texto{
+    background-color: rgb(50,50,60);
+    border-style: none;
+    color: white;
+}
+.fondo-oscuro-texto:focus-visible {
+    outline:none;
+}
 .sidebar-text{
     width: 70%;
     display: flex;
@@ -196,4 +161,19 @@ body{
     display: flex;
     flex-direction: row;
 }
+/* .......................................................................................................... */
+.lightmode{
+    background-color: rgb(233, 233, 229);
+    transition: background 0.2s 0s ease;
+  
+    }
+    .ivorymode{
+        background-color: rgb(240, 240, 182);  
+        transition: background 0.2s 0s ease;
+          color: rgb(30,30,40);
+    }
+    .yellowmode{
+        background-color: rgb(240, 224, 156);
+        transition: background 0.2s 0s ease;
+    }
 
