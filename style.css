@@ -19,10 +19,12 @@ body{
     justify-content: space-around;
     background-color: rgb(20,20,30);
     width: 100%;
+    
 }
 .botones{
     display: flex;
     flex-direction: row;
+    
 }
 .boton-texto:focus,.boton-imagen:focus{
     background-color: rgb(50, 50,60);
@@ -36,6 +38,7 @@ body{
     background-color: rgba(255, 0, 0, 0);
     border-color: rgba(255, 0, 0, 0);
     padding: 7px;
+    color: wheat;
 }
 /* ........................................Principal........................................... */
 .main-content{
@@ -118,7 +121,7 @@ body{
 }
 .fondo-oscuro{
     background-color: rgb(50,50,60);
-    color: white;
+    
 }
 .fondo-oscuro:focus-visible {
     outline:none;
@@ -127,7 +130,7 @@ body{
 .fondo-oscuro-texto{
     background-color: rgb(50,50,60);
     border-style: none;
-    color: white;
+   
 }
 .fondo-oscuro-texto:focus-visible {
     outline:none;
