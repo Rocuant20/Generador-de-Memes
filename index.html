@@ -49,13 +49,13 @@
         <h1 class="sidebar-tittle">Imagen</h1>
         <div class="sidebar-url">
           <label for="url-text">URL</label>
-          <input class="fondo-oscuro" id="url-text" type="text" />
+          <input class="fondo-oscuro top-bottom-text" id="url-text" type="text" />
         </div>
         <h5>FONDO</h5>
         <div class="sidebar-color">
           <input id="" type="color" />
           <form action="">
-            <select class="fondo-oscuro" name="image-options" id="image-options">
+            <select class="fondo-oscuro selector" name="image-options" id="background-filters">
               <option value="ninguno">Ninguno</option>
               <option value="aclarar">Aclarar</option>
               <option value="oscurecer">Oscurecer</option>
@@ -86,26 +86,26 @@
           <label for="sidebar-negative">NEGATIVO</label>
           <input class="rango" id="sidebar-negative" type="range" />
         </div>
-        <button class="reset-filters">Reestablecer Filtros</button>
+        <button id="reset-filters-button" class="reset-filters">Reestablecer Filtros</button>
       </div>
       <!-- .................................................Barra texto.................................................-->
       <div id="sidebar-text" class="sidebar-text ">
         <h1 class="sidebar-tittle">Texto</h1>
         <label   for="Texto-Superior">Superior</label>
-        <textarea class="probando fondo-oscuro-texto" name="" id="Texto-Superior" cols="5" rows="1"></textarea>
+        <textarea class="probando fondo-oscuro-texto top-bottom-text" name="" id="Texto-Superior" cols="5" rows="1"></textarea>
         <div class="checkbox-text ">
           <input type="checkbox" class="fondo-oscuro-texto" />
           <p>sin texto Superior</p>
         </div>
-        <label for="Texto-inferior">inferior</label>
-        <textarea class="probando fondo-oscuro-texto" name="" id="Texto-inferior" cols="5" rows="1"></textarea>
+        <label for="Texto-Inferior">inferior</label>
+        <textarea class="probando fondo-oscuro-texto top-bottom-text" name="" id="Texto-Inferior" cols="5" rows="1"></textarea>
         <div class="checkbox-text">
           <input type="checkbox" />
           <p>sin texto inferiror</p>
         </div>
         <h4>FUENTE</h4>
         <form action="">
-          <select name="font-options" id="font-options">
+          <select class="selector" name="font-options" id="font-options">
             <option value="Arial">Arial</option>
             <option value="ABlack">Arial Black</option>
             <option value="ATyesriter">American Typewriter</option>
@@ -118,10 +118,10 @@
           </select>
         </form>
         <div class="font-buttons">
-          <input type="number" class="number-button" />
-          <button>a</button>
-          <button>a</button>
-          <button>a</button>
+          <input id="number-button" placeholder="40" type="number" class="number-button" />
+          <button id="position-text-left">Izq</button>
+          <button id="position-text-center">Cen</button>
+          <button id="position-text-right">Der</button>
         </div>
         <div class="color-background">
           <div class="text-color">
@@ -139,15 +139,15 @@
         </div>
         <div class="contorno-colores">
           <h4>CONTORNO</h4>
-          <button>Ninguno</button>
-          <button>Claro</button>
-          <button>Oscuro</button>
+          <button id="outline-none" class="contorno-botones">Ninguno</button>
+          <button id="outline-bright" class="contorno-botones">Claro</button>
+          <button id="outline-dark" class="contorno-botones">Oscuro</button>
         </div>
         <label for="space">ESPACIO</label>
-        <input class="probando" id="space" type="number" />
+        <input class="text-space selector" id="space" type="number" />
         <h4>INTERLINEADO</h4>
         <form action="">
-          <select name="image-options" id="image-options">
+          <select class="interlined-selector selector" name="image-options" id="interline-options">
             <option value="zero">0.8</option>
             <option value="one">1</option>
             <option value="one-two">1.2</option>

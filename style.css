@@ -71,6 +71,7 @@ body{
     justify-content: center;
     height: 15%;
     background-color: white;
+    box-sizing: border-box;
 }
 .button-download-meme:hover{
     background-color: rgb(109, 161, 30);
@@ -86,6 +87,20 @@ body{
     color: rgb(0, 0, 0);
 }
 /* ........................................Sidebar-General........................................... */
+button{
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(50,50,60);
+    border: none;
+    color: wheat;
+}
+button:hover{
+    background-color: rgb(80,80,100);
+    transition: background 0.2s 0s ease;
+}
+button:active{
+    background-color: rgb(50,50,60);
+}
 .sidebars{
     display: flex;
     flex-direction: column;
@@ -96,14 +111,17 @@ body{
 
 }
 /* ........................................Sidebar-Image........................................... */
-.sidebar-image,.sidebar-url,.sidebar-filters{
+.sidebar-url,.sidebar-filters{
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .sidebar-color{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
 }
 .rango{
     appearance: none;
@@ -113,16 +131,17 @@ body{
     background-color: #4b4b4b;
 }
 
-.reset-filters:hover{
+/* .reset-filters:hover{
     background-color: rgb(80,80,100);
     transition: background 0.2s 0s ease;
-}
+} */
 .reset-filters{
     margin-top: 20px;
-    padding: 10px;
-    background-color: rgb(60,60,80);
-    border-style: none;
+    /* padding: 10px; */
+    /* background-color: rgb(60,60,80);
+    border-style: none; */
     border-radius: 13px;
+    /* color: wheat; */
 }
 .fondo-oscuro{
     background-color: rgb(50,50,60);
@@ -140,18 +159,31 @@ body{
 .fondo-oscuro-texto:focus-visible {
     outline:none;
 }
-.sidebar-text{
+.sidebar-text,.sidebar-image{
     width: 70%;
     display: flex;
     flex-direction: column;
+    gap: 15px;
+}
+.sidebar-text{
     display: none;
+    gap: 15px;
 }
 .checkbox-text{
     display: flex;
     flex-direction: row;
 }
+.top-bottom-text{
+    padding: 10px;
+    border: none;
+}
 .number-button{
-    width: 50%;
+    width: 40%;
+    padding: 6px;
+    background-color: rgb(50,50,60);
+    border: none;
+    /*border: none;
+    color: wheat; */
 }
 .color-background{
     display: flex;
@@ -160,6 +192,20 @@ body{
 .text-color{
     display: flex;
     flex-direction: column;
+}
+.selector{
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(50, 50,60);
+    color: wheat;
+    border: none;
+}
+.contorno-botones{
+    /* padding: 10px; */
+    width: 30%;
+    /* background-color: rgb(50,50,60);
+    color: wheat;
+    border: none; */
 }
 .text-background{
     display: flex;
@@ -180,8 +226,25 @@ body{
         transition: background 0.2s 0s ease;
           color: rgb(30,30,40);
     }
+    .ivorymodebuttons{
+        background-color: rgb(240, 240, 182);
+        transition: background 0.2s 0s ease;
+        color: rgb(30,30,40);
+    }
+    .ivorymodebuttons:hover{
+        background-color: rgb(176, 154, 89);
+        transition: background 0.2s 0s ease;
+    }
+    .ivorymodebuttons:focus{
+        background-color: rgb(176, 154, 89);
+    }
     .yellowmode{
         background-color: rgb(240, 224, 156);
         transition: background 0.2s 0s ease;
+        color: rgb(30,30,40);
+    }
+    .rangeivorymode{
+        background-color: rgb(176, 154, 89);
+        color: rgb(30,30,40);
     }
 
